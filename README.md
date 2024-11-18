@@ -15,12 +15,5 @@ Themes (What will it have)?:
 <p> Frequently asked questions FaQ</p>
 <p>links for further education</p>
 
-
-<p>Lorem ipsum...</p>
-
 <h2>Features (Smaller detail):</h2>
 <p>Links/material for further education of BC-tech and other applicable knowledge. </p>
-<p> </p>
-
-
-<p>Lorem ipsum</p>
