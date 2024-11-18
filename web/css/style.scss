@@ -1,0 +1,13 @@
+// Sass
+
+/* Import the root, reset and animation styles */
+@import "_root.scss";
+@import "_reset.scss";
+@import "_animations.scss";
+
+/* Import the primary styles */
+@import "_primary.scss";
+
+/* Import header and footer styles */
+@import "_header.scss";
+@import "_footer.scss";
