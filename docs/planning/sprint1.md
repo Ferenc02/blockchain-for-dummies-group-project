@@ -18,4 +18,4 @@
 - Developer: EVERYBODY! 
 
 ## Screenshot
-![Backlog](path/to/backlog-screenshot.png)
+![Backlog](../images/sprint1_2024_11_20.JPG)
