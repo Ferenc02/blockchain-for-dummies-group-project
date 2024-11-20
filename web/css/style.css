@@ -1,1 +1,131 @@
-:root{--background-primary: #ffffff;--text-primary: #000}*,*::before,*::after{box-sizing:border-box}ul[class],ol[class]{padding:0}body,h1,h2,h3,h4,p,figure,blockquote,dl,dd{margin:0}html,body{margin:0;padding:0;overflow-x:hidden}html{scroll-behavior:smooth;-moz-text-size-adjust:none;-webkit-text-size-adjust:none;text-size-adjust:none}body{min-height:100vh;text-rendering:optimizeSpeed;line-height:1.5}h1,h2,h3,h4,button,input,label{line-height:1.1}ul[class],ol[class]{list-style:none}a:not([class]){text-decoration-skip-ink:auto}img,picture{max-width:100%;display:block}input,button,textarea,select{font:inherit}img:not([alt]){filter:blur(10px)}@media(prefers-reduced-motion: reduce){*{animation-duration:.01ms !important;animation-iteration-count:1 !important;transition-duration:.01ms !important;scroll-behavior:auto !important}}/*# sourceMappingURL=style.css.map */
+/* Import the root, reset and animation styles */
+/*
+* Root variables for the project
+*/
+:root {
+  --background-primary: #ffffff;
+  --text-primary: #000;
+}
+
+/*
+ * A modern alternative to CSS resets
+ * @link https://piccalil.li/blog/a-modern-css-reset
+ * Also modified by me
+*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  filter: blur(10px);
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*
+* Animations being used in the project
+*/
+/* Import the primary styles */
+/* 
+*Style used for the primary elements of the website 
+*This file is used to style the website when it is viewed on a desktop device. (min-width: 1024px)
+*This project is desktop-first, so the styles in this file are the default styles for the website.
+*/
+/* Import header and footer styles */
+/* 
+*Style used for the header of the website 
+*/
+/* 
+*Style used for the footer of the website 
+*//*# sourceMappingURL=style.css.map */
