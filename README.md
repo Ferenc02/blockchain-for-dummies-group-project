@@ -1,5 +1,5 @@
 <h1>Vision: </h1>
-<p>>Natural language inspired website description explaining blockchain technology to someone who either has little or no knowledge of BC technology. The website must be responsive for mobile/tablet and desktop.</p>
+<p>Natural language inspired website description explaining blockchain technology to someone who either has little or no knowledge of BC technology. The website must be responsive for mobile/tablet and desktop.</p>
 <p>Finished website is going to be used as a learning tool about blockchain technology. </p>
 
 <h2>
@@ -21,9 +21,10 @@ Themes (What will it have)?:
 
 ## Structure
 
-- **Sprintplanning**: [Click here](./docs/planning/sprint-planning.md)
+- **Sprintplanning**: [Click here](./docs/planning)
 - **Daily stand-ups**: [Click here](./docs/standups/)
 - **Retros**: [Click here](./docs/retros/)
+- **Sprint Review**: [Click here](./docs/sprint_review)
 
 ## GitHub Projects
 
