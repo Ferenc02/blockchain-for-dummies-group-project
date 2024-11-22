@@ -9,4 +9,4 @@
 - **Task 6**: Finish the html bone structure (3 story points)
 
  ## Screenshot
-![Backlog](../docs/images/Sprint-2-Project-Board.JPG)
+![Backlog](../images/Sprint-2-Project-Board.JPG)
