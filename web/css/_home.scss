@@ -18,6 +18,11 @@
     align-items: center;
     width: 100%;
     min-height: 28rem;
+
+    h1 {
+      font-weight: 400;
+      padding-bottom: 2rem;
+    }
   }
 
   .creators-parent {
@@ -57,7 +62,28 @@
     }
   }
 
-  h1 {
-    font-weight: 400;
+  .arrow-down {
+    position: absolute;
+    bottom: 1rem;
+
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: fit-content;
+
+    a {
+      animation: move_up_down 1.5s infinite ease-in-out;
+      display: block;
+      padding: 1rem;
+      width: fit-content;
+    }
+    img {
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .arrow-down {
+    display: none;
   }
 }
