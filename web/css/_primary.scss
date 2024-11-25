@@ -1,5 +1,12 @@
 /* 
 *Style used for the primary elements of the website 
-*This file is used to style the website when it is viewed on a desktop device. (min-width: 1024px)
-*This project is desktop-first, so the styles in this file are the default styles for the website.
+
 */
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
