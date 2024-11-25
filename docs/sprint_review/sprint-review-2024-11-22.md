@@ -1,4 +1,4 @@
-# Sprint Review - Sprint 1 (2024-11-24)
+# Sprint Review - Sprint 1 (2024-11-22)
 
 ## What was Done?
 - Started working on the wireframe, having a base foundation.
