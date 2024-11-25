@@ -12,5 +12,8 @@ header {
   }
   ul {
     display: flex;
+    gap: 10px;
+    list-style-type: none;
+    margin-right: 20px;
   }
 }
