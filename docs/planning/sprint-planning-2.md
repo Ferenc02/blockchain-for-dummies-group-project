@@ -1,4 +1,4 @@
-# Sprint planning - Sprint 1 (2024-11-23 to 2024-11-25)
+# Sprint planning - Sprint 2 (2024-11-23 to 2024-11-25)
 
 ## Backlog Tasks are not in chronological order. 
 - **Task 1**: Create wireframe for the page (1 story points).
