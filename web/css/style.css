@@ -195,9 +195,9 @@ header ul {
   /* End */
 }
 .Contact-Us h1 {
-  height: 120px;
+  height: 160px;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
 }
 .Contact-Us .card-container {
   display: flex;
