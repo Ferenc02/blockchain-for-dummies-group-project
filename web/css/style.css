@@ -194,7 +194,7 @@ header ul {
   height: 100vh;
   /* End */
 }
-.Contact-Us h1 {
+.Contact-Us .section-title {
   height: 160px;
   display: flex;
   align-items: center;
@@ -208,4 +208,5 @@ header ul {
 .Contact-Us .card-container div {
   width: 493px;
   height: 615px;
+  background: #D9D9D9;
 }/*# sourceMappingURL=style.css.map */
