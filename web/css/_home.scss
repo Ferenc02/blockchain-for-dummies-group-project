@@ -47,7 +47,7 @@
 
     .creators-profile {
       display: flex;
-      justify-content: center;
+
       align-items: center;
       gap: 2rem;
       margin-top: 2rem;
@@ -112,12 +112,13 @@
       }
     }
     .creators-profile-container {
-      justify-content: flex-start;
       gap: 1rem;
       .creators-profile {
         font-size: 1.2rem;
         gap: 1rem;
         margin-top: 1rem;
+
+        width: 10rem;
         img {
           width: 4rem;
           height: 4rem;
