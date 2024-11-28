@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blockchain</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blockchain</title>
 
-  <link rel="stylesheet" href="./css/style.css" />
-  <script src="js/script.js" defer></script>
-</head>
-  <header>
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!--Import google font inter-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="js/script.js" defer></script>
+  </head>
+
+  <body>
+    <header>
       <nav>
         <ul>
           <li><a href="">How it works</a></li>
@@ -18,16 +29,94 @@
           <li><a href="">Contact us</a></li>
         </ul>
       </nav>
-  <header>
-<body>
-  <p>Blockchain is awesome</p>
-</body>
+    </header>
+    <main>
+      <!---
+      Each section should have a title and a div for the content.
+      The title should be an h1 element and have the class section-title so the styling is consistent.
+      All content should be accessible and responsive and inside the div element.
+      The content can be text, images, videos, etc.
+      -->
 
+      <!--Homepage-->
+      <section class="Home">
+        <div class="hero">
+          <h1>Blockchain for dummies 101</h1>
+          <img src="./images/hero_image.png" alt="Blockchain" />
+        </div>
 
-<!-- --------------------------footer---------------------------------------- -->
+        <div class="creators-parent">
+          <h2>Created By:</h2>
 
+          <div class="creators-profile-container">
+            <div class="creators-profile">
+              <img
+                src="./images/topias_profile.avif"
+                alt="Profile picture of Topias taking a selfie."
+                loading="lazy"
+              />
+              <p>Topias</p>
+            </div>
+            <div class="creators-profile">
+              <img
+                src="./images/arwin_profile.avif"
+                alt="Profile picture of Arwin sitting outside"
+                loading="lazy"
+              />
+              <p>Arwin</p>
+            </div>
+            <div class="creators-profile">
+              <img
+                src="./images/james_profile.avif"
+                alt="Profile picture of James smiling"
+                loading="lazy"
+              />
+              <p>James</p>
+            </div>
+            <div class="creators-profile">
+              <img
+                src="./images/ferenc_profile.avif"
+                alt="Profile picture of Ferenc smiling"
+                loading="lazy"
+              />
+              <p>Ferenc</p>
+            </div>
+          </div>
+          <div class="arrow-down">
+            <a href="#How-it-works">
+              <img
+                src="./images/arrow_down.svg"
+                alt="Navigate to How it Works section"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
+      <!--James section. -->
+      <section class="How-it-works" id="How-it-works">
+        <h1 class="section-title">How it works</h1>
+        <div></div>
+      </section>
+      <!--Ferenc section. -->
+      <section class="Uses">
+        <h1 class="section-title">Uses</h1>
+        <div></div>
+      </section>
+      <!--Topias section. -->
+      <section class="Faq">
+        <h1 class="section-title">Frequently Asked Questions</h1>
+        <div></div>
+      </section>
+      <!--Arwin section. -->
+      <section class="Contact-Us">
+        <h1 class="section-title">Contact Us</h1>
+        <div></div>
+      </section>
+    </main>
 
-<footer>
+    <!-- --------------------------footer---------------------------------------- -->
+
+    <footer>
   <nav aria-label="Footer Navigation">
     <a href="#" aria-label="How blockchain works section">How it works</a>
     <a href="#" aria-label="Discover uses of blockchain">Uses</a>
@@ -57,6 +146,5 @@
 
   <small>&copy; Krypto Broshan's Incorporated, 2024</small>
 </footer>
-
-
+  </body>
 </html>
