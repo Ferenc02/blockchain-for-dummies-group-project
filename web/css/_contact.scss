@@ -40,11 +40,14 @@
         justify-content: center;
         align-items: center;
       }
+      p {
+        text-align: center;
+      }
       div {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 495px;
+        height: 447px;
         ul {
           display: flex;
           flex-direction: column;
