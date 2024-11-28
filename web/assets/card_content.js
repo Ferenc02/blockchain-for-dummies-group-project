@@ -1,22 +1,116 @@
 export const cardContent = {
   popular_uses: [
     {
-      title: "Card 1",
-      overview: "This is the content of card 1",
-      example: "Example 1",
-      icon: "../images/icon1.png",
+      title: "Decentralized Finance - DeFi",
+      overview:
+        "Blockchain enables peer-to-peer lending, cross-border payments, and decentralized exchanges without banks.",
+      example: "Send money globally instantly and avoid high bank fees.",
+      icon: "images/defi_icon.svg",
     },
     {
-      title: "Card 2",
-      overview: "This is the content of card 2",
-      example: "Example 2",
-      icon: "",
+      title: "Supply Chain Transparency",
+      overview:
+        "Track a products journey on blockchain, ensuring authenticity and quality.",
+      example: "Verify if coffee is ethically sourced or sneakers are genuine.",
+      icon: "images/truck_icon.svg",
     },
     {
-      title: "Card 3",
-      overview: "This is the content of card 3",
-      example: "",
-      icon: "",
+      title: "NFTs (Non-Fungible Tokens)",
+      overview:
+        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
+      example: "Creators sell digital art, music, or tweets as NFTs.",
+      icon: "images/image_icon.svg",
+    },
+    {
+      title: "NFTs (Non-Fungible Tokens)",
+      overview:
+        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
+      example: "Creators sell digital art, music, or tweets as NFTs.",
+      icon: "images/image_icon.svg",
+    },
+    {
+      title: "NFTs (Non-Fungible Tokens)",
+      overview:
+        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
+      example: "Creators sell digital art, music, or tweets as NFTs.",
+      icon: "images/image_icon.svg",
+    },
+    {
+      title: "NFTs (Non-Fungible Tokens)",
+      overview:
+        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
+      example: "Creators sell digital art, music, or tweets as NFTs.",
+      icon: "images/image_icon.svg",
+    },
+    {
+      title: "NFTs (Non-Fungible Tokens)",
+      overview:
+        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
+      example: "Creators sell digital art, music, or tweets as NFTs.",
+      icon: "images/image_icon.svg",
+    },
+    {
+      title: "NFTs (Non-Fungible Tokens)",
+      overview:
+        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
+      example: "Creators sell digital art, music, or tweets as NFTs.",
+      icon: "images/image_icon.svg",
+    },
+    {
+      title: "NFTs (Non-Fungible Tokens)",
+      overview:
+        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
+      example: "Creators sell digital art, music, or tweets as NFTs.",
+      icon: "images/image_icon.svg",
+    },
+    {
+      title: "NFTs (Non-Fungible Tokens)",
+      overview:
+        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
+      example: "Creators sell digital art, music, or tweets as NFTs.",
+      icon: "images/image_icon.svg",
+    },
+    {
+      title: "NFTs (Non-Fungible Tokens)",
+      overview:
+        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
+      example: "Creators sell digital art, music, or tweets as NFTs.",
+      icon: "images/image_icon.svg",
+    },
+    {
+      title: "NFTs (Non-Fungible Tokens)",
+      overview:
+        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
+      example: "Creators sell digital art, music, or tweets as NFTs.",
+      icon: "images/image_icon.svg",
+    },
+    {
+      title: "NFTs (Non-Fungible Tokens)",
+      overview:
+        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
+      example: "Creators sell digital art, music, or tweets as NFTs.",
+      icon: "images/image_icon.svg",
+    },
+    {
+      title: "NFTs (Non-Fungible Tokens)",
+      overview:
+        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
+      example: "Creators sell digital art, music, or tweets as NFTs.",
+      icon: "images/image_icon.svg",
+    },
+    {
+      title: "NFTs (Non-Fungible Tokens)",
+      overview:
+        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
+      example: "Creators sell digital art, music, or tweets as NFTs.",
+      icon: "images/image_icon.svg",
+    },
+    {
+      title: "NFTs (Non-Fungible Tokens)",
+      overview:
+        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
+      example: "Creators sell digital art, music, or tweets as NFTs.",
+      icon: "images/image_icon.svg",
     },
   ],
   innovative_uses: [
