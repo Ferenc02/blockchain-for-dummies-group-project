@@ -22,115 +22,107 @@ export const cardContent = {
       icon: "images/image_icon.svg",
     },
     {
-      title: "NFTs (Non-Fungible Tokens)",
+      title: "Cross-Border Payments",
       overview:
-        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
-      example: "Creators sell digital art, music, or tweets as NFTs.",
-      icon: "images/image_icon.svg",
+        "Blockchain enables instant, low-cost international payments, bypassing banks and intermediaries.",
+      example:
+        "Send money to family members or businesses globally in minutes with low fees.",
+      icon: "images/payment_icon.svg",
     },
     {
-      title: "NFTs (Non-Fungible Tokens)",
+      title: "Real Estate Transactions",
       overview:
-        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
-      example: "Creators sell digital art, music, or tweets as NFTs.",
-      icon: "images/image_icon.svg",
+        "Blockchain simplifies property transactions by reducing paperwork and ensuring secure, transparent ownership transfers.",
+      example:
+        "Buy or sell a house without the need for traditional escrow services.",
+      icon: "images/real_estate_icon.svg",
     },
     {
-      title: "NFTs (Non-Fungible Tokens)",
+      title: "Blockchain in Voting Systems",
       overview:
-        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
-      example: "Creators sell digital art, music, or tweets as NFTs.",
-      icon: "images/image_icon.svg",
+        "Blockchain provides secure, transparent, and tamper-proof digital voting systems.",
+      example:
+        "Citizens vote in elections via blockchain, ensuring their votes are counted and immutable.",
+      icon: "images/voting_icon.svg",
     },
     {
-      title: "NFTs (Non-Fungible Tokens)",
+      title: "Tokenization of Assets",
       overview:
-        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
-      example: "Creators sell digital art, music, or tweets as NFTs.",
-      icon: "images/image_icon.svg",
+        "Blockchain allows for the tokenization of real-world assets, including property, art, and stocks, making them tradable on decentralized platforms.",
+      example:
+        "Invest in real estate or rare art through fractional ownership via blockchain-based tokens.",
+      icon: "images/tokenization_icon.svg",
     },
     {
-      title: "NFTs (Non-Fungible Tokens)",
+      title: "Blockchain for IoT Security",
       overview:
-        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
-      example: "Creators sell digital art, music, or tweets as NFTs.",
-      icon: "images/image_icon.svg",
-    },
-    {
-      title: "NFTs (Non-Fungible Tokens)",
-      overview:
-        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
-      example: "Creators sell digital art, music, or tweets as NFTs.",
-      icon: "images/image_icon.svg",
-    },
-    {
-      title: "NFTs (Non-Fungible Tokens)",
-      overview:
-        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
-      example: "Creators sell digital art, music, or tweets as NFTs.",
-      icon: "images/image_icon.svg",
-    },
-    {
-      title: "NFTs (Non-Fungible Tokens)",
-      overview:
-        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
-      example: "Creators sell digital art, music, or tweets as NFTs.",
-      icon: "images/image_icon.svg",
-    },
-    {
-      title: "NFTs (Non-Fungible Tokens)",
-      overview:
-        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
-      example: "Creators sell digital art, music, or tweets as NFTs.",
-      icon: "images/image_icon.svg",
-    },
-    {
-      title: "NFTs (Non-Fungible Tokens)",
-      overview:
-        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
-      example: "Creators sell digital art, music, or tweets as NFTs.",
-      icon: "images/image_icon.svg",
-    },
-    {
-      title: "NFTs (Non-Fungible Tokens)",
-      overview:
-        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
-      example: "Creators sell digital art, music, or tweets as NFTs.",
-      icon: "images/image_icon.svg",
-    },
-    {
-      title: "NFTs (Non-Fungible Tokens)",
-      overview:
-        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
-      example: "Creators sell digital art, music, or tweets as NFTs.",
-      icon: "images/image_icon.svg",
-    },
-    {
-      title: "NFTs (Non-Fungible Tokens)",
-      overview:
-        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
-      example: "Creators sell digital art, music, or tweets as NFTs.",
-      icon: "images/image_icon.svg",
+        "Blockchain enhances the security of the Internet of Things (IoT) devices by decentralizing and securing data exchange between devices.",
+      example:
+        "Devices such as smart home products can securely communicate and perform automated tasks with blockchain.",
+      icon: "images/iot_icon.svg",
     },
   ],
   innovative_uses: [
     {
-      title: "Card 4",
-      overview: "This is the content of card 4",
-      example: "",
-      icon: "",
+      title: "Blockchain in Healthcare",
+      overview:
+        "Secures patient records and enables secure data sharing between hospitals.",
+      example: "Doctors can access secure medical histories, reducing errors.",
+      icon: "images/health_icon.svg",
     },
     {
-      title: "Card 5",
-      overview: "This is the content of card 5",
-      example: "",
-      icon: "",
+      title: "Identity Systems",
+      overview:
+        "Users control their digital identities, reducing dependence on centralized platforms.",
+      example: "Log into services without sharing personal data.",
+      icon: "images/fingerprint_icon.svg",
     },
     {
-      title: "Card 6",
-      overview: "This is the content of card 6",
-      example: "",
-      icon: "",
+      title: "Carbon and Sustainability",
+      overview:
+        "Blockchain proves ownership of digital assets and allows direct sales to buyers.",
+      example: "Creators sell digital art, music, or tweets as NFTs.",
+      icon: "images/plant_icon.svg",
+    },
+    {
+      title: "Insurance Smart Contracts",
+      overview:
+        "Insurance claims can be processed automatically using smart contracts that trigger payouts when conditions are met.",
+      example:
+        "Travel insurance policies trigger an automatic payout if a flight is delayed by more than 3 hours.",
+      icon: "images/plant_icon.svg",
+    },
+    {
+      title: "Global Remittance Simplification",
+      overview:
+        "Blockchain reduces the cost and time required to send money internationally by bypassing traditional banks.",
+      example:
+        "People can send money to family members instantly using blockchain-based remittance platforms.",
+      icon: "images/plant_icon.svg",
+    },
+    {
+      title: "Anti-Counterfeiting for Luxury Goods",
+      overview:
+        "Blockchain helps verify the authenticity of high-end products like watches, handbags, and wines.",
+      example:
+        "A unique blockchain record is created for each item, allowing customers to scan a code to verify authenticity.",
+      icon: "images/plant_icon.svg",
+    },
+    {
+      title: "Charitable Donations Transparency",
+      overview:
+        "Blockchain tracks how donations are spent, ensuring that funds go directly to their intended causes.",
+      example:
+        "Nonprofits publish transaction records on a blockchain, allowing donors to follow their money's impact.",
+      icon: "images/plant_icon.svg",
+    },
+    {
+      title: "Blockchain for Scientific Research",
+      overview:
+        "Blockchain can store and verify research data, ensuring that results are transparent and reproducible.",
+      example:
+        "Researchers upload their raw data to the blockchain, creating a tamper-proof record of their findings.",
+      icon: "images/plant_icon.svg",
     },
   ],
 };
