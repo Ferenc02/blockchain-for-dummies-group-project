@@ -205,7 +205,7 @@ header ul {
   display: flex;
   justify-content: space-around;
 }
-.Contact-Us .card-container div {
+.Contact-Us .card-container .card {
   width: 493px;
   height: 615px;
   background: #D9D9D9;
@@ -221,9 +221,25 @@ header ul {
   flex-direction: column;
   justify-content: space-around;
 }
+.Contact-Us .card-container .right-card {
+  display: flex;
+  flex-direction: column;
+}
 .Contact-Us .card-container .right-card h1 {
   height: 120px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.Contact-Us .card-container .right-card div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 495px;
+}
+.Contact-Us .card-container .right-card div ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 40px;
 }/*# sourceMappingURL=style.css.map */
