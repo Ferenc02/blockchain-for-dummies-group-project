@@ -126,6 +126,72 @@ img:not([alt]) {
 /* 
 *Style used for the header of the website 
 */
-/* 
-*Style used for the footer of the website 
-*//*# sourceMappingURL=style.css.map */
+footer {
+  position: relative;
+  z-index: 10;
+  padding: clamp(1rem, 3vw, 2rem);
+  background-color: #04102c;
+  color: whitesmoke;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+footer nav {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: clamp(0.5rem, 2vw, 1rem);
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
+}
+footer nav a {
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  color: whitesmoke;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+footer nav a:hover {
+  color: #66c1e4;
+}
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: clamp(0.5rem, 2vw, 1rem);
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
+}
+footer .social-links a {
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  color: #fff;
+  text-decoration: none;
+  background-color: #66c1e4;
+  padding: clamp(0.5rem, 1vw, 0.75rem) clamp(1rem, 2vw, 1.5rem);
+  border-radius: 8px;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+footer .social-links a:hover {
+  background-color: #4a94b9;
+  transform: translateY(-2px);
+}
+footer .donation {
+  margin-bottom: clamp(1rem, 2vw, 1.5rem);
+}
+footer .donation a {
+  display: inline-block;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  color: #fff;
+  text-decoration: none;
+  background-color: #66c1e4;
+  padding: clamp(0.5rem, 1vw, 0.75rem) clamp(1rem, 2vw, 1.5rem);
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+footer .donation a:hover {
+  background-color: #4a94b9;
+  transform: translateY(-2px);
+}
+footer small {
+  display: block;
+  margin-top: clamp(1rem, 2vw, 1.5rem);
+  font-size: clamp(0.8rem, 2vw, 1rem);
+  color: rgba(255, 255, 255, 0.8);
+}/*# sourceMappingURL=style.css.map */
