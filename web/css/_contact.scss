@@ -50,6 +50,12 @@
           flex-direction: column;
           justify-content: space-between;
           gap: 40px;
+          li {
+            a {
+              text-decoration: none;
+              color: blue;
+            }
+          }
         }
       }
     }

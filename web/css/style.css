@@ -242,4 +242,8 @@ header ul {
   flex-direction: column;
   justify-content: space-between;
   gap: 40px;
+}
+.Contact-Us .card-container .right-card div ul li a {
+  text-decoration: none;
+  color: blue;
 }/*# sourceMappingURL=style.css.map */
