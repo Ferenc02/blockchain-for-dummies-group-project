@@ -1,3 +1,6 @@
+
+
+//Faq Javascript for boxes open and close.
 document.querySelectorAll(".faq-question").forEach((button) => {
     button.addEventListener("click", () => {
       const faqItem = button.parentElement;
