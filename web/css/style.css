@@ -307,9 +307,9 @@ header ul {
 }
 
 .Faq .faq-container {
-  max-width: 1500px;
+  max-width: 2000px;
   margin: 0 auto;
-  padding: 1rem;
+  padding: 5rem;
 }
 .Faq .faq-item {
   margin-bottom: 1rem;
