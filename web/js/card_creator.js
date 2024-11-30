@@ -6,7 +6,7 @@ import { cardContent } from "../assets/card_content.js";
 
 let rootStyles = getComputedStyle(document.documentElement);
 
-/* Define css variables for colors */
+/* css variables for colors so the cards can have different colors*/
 const cssVariables = [
   /* German Palette from flatui colors */
   "--new-boyzone",
@@ -39,7 +39,7 @@ const scrollRightInnovativeButton = document.querySelector(
 
 // Create cards for popular uses
 let generatePopularUsesCard = () => {
-  let color_index = 0;
+  let color_index = 0; // Color index is set to 0 to start from the first color in the palette
   cardContent.popular_uses.forEach((card) => {
     popularUsesElement.innerHTML += `
         <div class="card" style="background-color: ${rootStyles.getPropertyValue(
@@ -56,12 +56,15 @@ let generatePopularUsesCard = () => {
         </div>
         `;
 
-    color_index++;
+    color_index++; // Increment color index
+
+    /* If the color index is greater than or equal to the length of the css variables array, reset the color index to 0 so the colors can never end*/
     if (color_index >= cssVariables.length) {
       color_index = 0;
     }
   });
 
+  /* If the number of popular uses cards is greater than 3, make the scroll buttons visible*/
   if (cardContent.popular_uses.length > 3) {
     scrollRightPopularButton.style.visibility = "visible";
     scrollLeftPopularButton.style.visibility = "visible";
@@ -128,6 +131,7 @@ let generateInnovativeUsesCard = () => {
   });
 };
 
+/* Generate cards for popular and innovative uses*/
 generatePopularUsesCard();
 generateInnovativeUsesCard();
 
