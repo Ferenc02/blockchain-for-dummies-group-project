@@ -139,18 +139,18 @@ const isMobile = window.matchMedia(
   "only screen and (max-width: 760px)"
 ).matches;
 
+// Function to handle scrolling
+const handleScroll = (element, direction, amount) => {
+  element.style.scrollBehavior = "smooth";
+  element.scrollLeft += direction * amount;
+
+  // Reset scroll behavior after scrolling so that the user can scroll smoothly while dragging
+  setTimeout(() => {
+    element.style.scrollBehavior = "initial";
+  }, 300); // Adjust timeout to match scroll duration if needed
+};
+
 if (!isMobile) {
-  // Function to handle scrolling
-  const handleScroll = (element, direction, amount) => {
-    element.style.scrollBehavior = "smooth";
-    element.scrollLeft += direction * amount;
-
-    // Reset scroll behavior after scrolling so that the user can scroll smoothly while dragging
-    setTimeout(() => {
-      element.style.scrollBehavior = "initial";
-    }, 300); // Adjust timeout to match scroll duration if needed
-  };
-
   const cardsContainers = document.querySelectorAll(".cards-container");
   const cards = document.querySelectorAll(".card");
 
