@@ -34,19 +34,25 @@
   }
 
   .cards-container {
-    scroll-behavior: smooth;
     display: flex;
 
     gap: 1rem;
 
     overflow-x: auto;
-    scroll-snap-type: x mandatory;
+
+    overflow: hidden;
+
     -webkit-overflow-scrolling: touch;
 
     margin: auto;
-    overflow: hidden;
+
+    user-select: none;
 
     width: 100%;
+    cursor: move;
+    cursor: grab;
+    cursor: -moz-grab;
+    cursor: -webkit-grab;
     .card {
       flex: 0 0 auto; /* Prevent cards from resizing */
       width: calc(
