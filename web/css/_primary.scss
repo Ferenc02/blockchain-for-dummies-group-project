@@ -16,3 +16,11 @@ section:not(:first-of-type):not(:is(footer section)) {
   /* Your styles here */
   padding: 2rem;
 }
+
+@media (max-width: 768px) {
+  /* Your styles here */
+  section:not(:first-of-type):not(:is(footer section)) {
+    /* Your styles here */
+    padding: 1rem;
+  }
+}

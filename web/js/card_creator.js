@@ -131,67 +131,74 @@ let generateInnovativeUsesCard = () => {
 generatePopularUsesCard();
 generateInnovativeUsesCard();
 
-// Function to handle scrolling
-const handleScroll = (element, direction, amount) => {
-  element.style.scrollBehavior = "smooth";
-  element.scrollLeft += direction * amount;
+const isMobile = window.matchMedia(
+  "only screen and (max-width: 760px)"
+).matches;
 
-  // Reset scroll behavior after scrolling so that the user can scroll smoothly while dragging
-  setTimeout(() => {
-    element.style.scrollBehavior = "initial";
-  }, 300); // Adjust timeout to match scroll duration if needed
-};
+if (!isMobile) {
+  // Function to handle scrolling
+  const handleScroll = (element, direction, amount) => {
+    element.style.scrollBehavior = "smooth";
+    element.scrollLeft += direction * amount;
 
-const cardsContainers = document.querySelectorAll(".cards-container");
-const cards = document.querySelectorAll(".card");
+    // Reset scroll behavior after scrolling so that the user can scroll smoothly while dragging
+    setTimeout(() => {
+      element.style.scrollBehavior = "initial";
+    }, 300); // Adjust timeout to match scroll duration if needed
+  };
 
-let isMouseDown = false;
-let startX;
-let scrollLeft;
-let velocity;
+  const cardsContainers = document.querySelectorAll(".cards-container");
+  const cards = document.querySelectorAll(".card");
 
-/* Add event listeners for scrolling for card containers*/
-cardsContainers.forEach((cardsContainer) => {
-  cardsContainer.addEventListener("mousedown", (e) => {
-    isMouseDown = true;
-    cardsContainer.classList.add("active");
-    startX = e.pageX - cardsContainer.offsetLeft;
-    scrollLeft = cardsContainer.scrollLeft;
-  });
+  let isMouseDown = false;
+  let startX;
+  let scrollLeft;
+  let velocity;
 
-  cardsContainer.addEventListener("mouseleave", () => {
-    if (isMouseDown) snapToNearestCard();
-    isMouseDown = false;
-    cardsContainer.classList.remove("active");
-  });
-
-  cardsContainer.addEventListener("mouseup", () => {
-    snapToNearestCard();
-    isMouseDown = false;
-    cardsContainer.classList.remove("active");
-  });
-
-  cardsContainer.addEventListener("mousemove", (e) => {
-    if (!isMouseDown) return;
-    e.preventDefault();
-    const x = e.pageX - cardsContainer.offsetLeft;
-    const walk = x - startX; // Calculate distance moved
-    velocity = walk * 0.1; // Adjust the multiplier for smoothness
-    cardsContainer.scrollLeft = scrollLeft - walk;
-  });
-
-  /* Function to snap to the nearest card */
-  function snapToNearestCard() {
-    const cardWidth =
-      cards[0].offsetWidth + parseInt(getComputedStyle(cardsContainer).gap, 10);
-    const currentScroll = cardsContainer.scrollLeft;
-    const nearestCardIndex = Math.round(currentScroll / cardWidth); // Find the closest card
-    const newScrollPosition = nearestCardIndex * cardWidth;
-
-    // Smoothly scroll to the nearest card
-    cardsContainer.scrollTo({
-      left: newScrollPosition,
-      behavior: "smooth",
+  /* Add event listeners for scrolling for card containers*/
+  cardsContainers.forEach((cardsContainer) => {
+    cardsContainer.addEventListener("mousedown", (e) => {
+      isMouseDown = true;
+      cardsContainer.classList.add("active");
+      startX = e.pageX - cardsContainer.offsetLeft;
+      scrollLeft = cardsContainer.scrollLeft;
     });
-  }
-});
+
+    cardsContainer.addEventListener("mouseleave", () => {
+      if (isMouseDown) snapToNearestCard();
+      isMouseDown = false;
+      cardsContainer.classList.remove("active");
+    });
+
+    cardsContainer.addEventListener("mouseup", () => {
+      snapToNearestCard();
+      isMouseDown = false;
+      cardsContainer.classList.remove("active");
+    });
+
+    cardsContainer.addEventListener("mousemove", (e) => {
+      if (!isMouseDown) return;
+      e.preventDefault();
+      const x = e.pageX - cardsContainer.offsetLeft;
+      const walk = x - startX; // Calculate distance moved
+      velocity = walk * 0.1; // Adjust the multiplier for smoothness
+      cardsContainer.scrollLeft = scrollLeft - walk;
+    });
+
+    /* Function to snap to the nearest card */
+    function snapToNearestCard() {
+      const cardWidth =
+        cards[0].offsetWidth +
+        parseInt(getComputedStyle(cardsContainer).gap, 10);
+      const currentScroll = cardsContainer.scrollLeft;
+      const nearestCardIndex = Math.round(currentScroll / cardWidth); // Find the closest card
+      const newScrollPosition = nearestCardIndex * cardWidth;
+
+      // Smoothly scroll to the nearest card
+      cardsContainer.scrollTo({
+        left: newScrollPosition,
+        behavior: "smooth",
+      });
+    }
+  });
+}

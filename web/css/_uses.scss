@@ -85,4 +85,25 @@
       }
     }
   }
+
+  /* mobile layout */
+  @media (max-width: 768px) {
+    .cards-container-parent {
+      padding: 1rem;
+    }
+    .cards-container {
+      padding: 0;
+      width: 100%;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .card {
+        width: auto;
+      }
+    }
+
+    button {
+      display: none;
+    }
+  }
 }
