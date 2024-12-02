@@ -4,7 +4,30 @@
 */
 :root {
   --background-primary: #ffffff;
-  --text-primary: #000;
+  --text-primary: #141414;
+  /* German Palette from flatui colors */
+  --fusion-red: #fc5c65;
+  --desire: #eb3b5a;
+  --orange-hibiscus: #fd9644;
+  --beniukon-bronze: #fa8231;
+  --flirtatious: #fed330;
+  --nyc-taxi: #f7b731;
+  --reptile-green: #26de81;
+  --algal-fuel: #20bf6b;
+  --maximum-blue-green: #2bcbba;
+  --turquoise-topaz: #0fb9b1;
+  --high-blue: #45aaf2;
+  --boyzone: #2d98da;
+  --c4-ntsc: #4b7bec;
+  --royal-blue: #3867d6;
+  --lighter-purple: #a55eea;
+  --gloomy-purple: #8854d0;
+  --twinkle-blue: #d1d8e0;
+  --innuendo: #a5b1c2;
+  --blue-grey: #778ca3;
+  --blue-horizon: #4b6584;
+  /*** Typography ***/
+  --font-primary: "Inter", sans-serif;
 }
 
 /*
@@ -78,6 +101,13 @@ ol[class] {
   list-style: none;
 }
 
+/* Remove default list styles */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   -webkit-text-decoration-skip: ink;
@@ -116,16 +146,41 @@ img:not([alt]) {
 /*
 * Animations being used in the project
 */
+@keyframes move_up_down {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 /* Import the primary styles */
 /* 
 *Style used for the primary elements of the website 
-*This file is used to style the website when it is viewed on a desktop device. (min-width: 1024px)
-*This project is desktop-first, so the styles in this file are the default styles for the website.
+
 */
+html,
+body {
+  font-family: var(--font-primary);
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* Import header and footer styles */
 /* 
 *Style used for the header of the website 
 */
+header {
+  background-color: red;
+}
+header ul {
+  display: flex;
+}
+
 footer {
   position: relative;
   z-index: 10;
@@ -137,13 +192,13 @@ footer {
 }
 footer nav {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: clamp(0.5rem, 2vw, 1rem);
   margin-bottom: clamp(1rem, 2vw, 1.5rem);
 }
 footer nav a {
-  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  font-size: clamp(1.5rem, 2vw, 1.9rem);
   color: whitesmoke;
   text-decoration: none;
   transition: color 0.3s ease;
@@ -194,4 +249,136 @@ footer small {
   margin-top: clamp(1rem, 2vw, 1.5rem);
   font-size: clamp(0.8rem, 2vw, 1rem);
   color: rgba(255, 255, 255, 0.8);
+}
+
+/* Import the sections */
+.Home {
+  text-align: center;
+  text-transform: capitalize;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Home .hero {
+  font-size: 3.5rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #dfe6e9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  min-height: 28rem;
+}
+.Home .hero h1 {
+  font-weight: 400;
+  padding-bottom: 2rem;
+}
+.Home .hero img {
+  width: 13.5rem;
+}
+.Home .creators-parent {
+  width: 100%;
+  padding: 2rem;
+  font-weight: 300;
+}
+.Home .creators-parent h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.Home .creators-profile-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.Home .creators-profile-container .creators-profile {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  font-size: 1.5rem;
+}
+.Home .creators-profile-container .creators-profile img {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* subtle shadow */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.Home .arrow-down {
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.Home .arrow-down a {
+  animation: move_up_down 1.5s infinite ease-in-out;
+  display: block;
+  padding: 1rem;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.Home .arrow-down img {
+  width: 3rem;
+}
+
+@media (max-width: 768px) {
+  .Home .hero {
+    padding: 2rem 2rem 0 2rem;
+    min-height: -moz-fit-content !important;
+    min-height: fit-content !important;
+  }
+  .Home .hero h1 {
+    font-size: 2rem;
+  }
+  .Home .hero img {
+    width: 8rem !important;
+  }
+  .Home .arrow-down img {
+    width: 2rem;
+  }
+  .Home .creators-parent h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .Home .creators-profile-container {
+    gap: 1rem;
+  }
+  .Home .creators-profile-container .creators-profile {
+    font-size: 1.2rem;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 10rem;
+  }
+  .Home .creators-profile-container .creators-profile img {
+    width: 4rem;
+    height: 4rem;
+  }
+}
+.How-it-works {
+  /* Write in here */
+  /* End */
+}
+
+.Uses {
+  /* Write in here */
+  /* End */
+}
+
+.Faq {
+  /* Write in here */
+  /* End */
+}
+
+.Contact-Us {
+  /* Write in here */
+  /* End */
 }/*# sourceMappingURL=style.css.map */
