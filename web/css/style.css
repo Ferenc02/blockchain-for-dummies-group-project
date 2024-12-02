@@ -163,13 +163,6 @@ body {
 /* 
 *Style used for the header of the website 
 */
-header {
-  background-color: red;
-}
-header ul {
-  display: flex;
-}
-
 /* 
 *Style used for the footer of the website 
 */
