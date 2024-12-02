@@ -221,6 +221,14 @@ header ul {
   flex-direction: column;
   justify-content: space-around;
 }
+.Contact-Us .card-container .left-card form input {
+  margin-right: 40px;
+  margin-left: 40px;
+}
+.Contact-Us .card-container .left-card form textarea {
+  margin-right: 30px;
+  margin-left: 30px;
+}
 .Contact-Us .card-container .right-card {
   display: flex;
   flex-direction: column;
