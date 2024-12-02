@@ -185,18 +185,13 @@ body {
 .Contact-Us {
   /* Write in here */
   height: 100vh;
+  background-color: #001f3f;
   /* End */
-}
-.Contact-Us .section-title {
-  height: 160px;
-  display: flex;
-  align-items: center;
-  position: relative;
-  left: 120px;
 }
 .Contact-Us .card-container {
   display: flex;
   justify-content: space-around;
+  padding-top: 120px;
 }
 .Contact-Us .card-container .card {
   width: 493px;
@@ -216,7 +211,7 @@ body {
   align-items: center;
 }
 .Contact-Us .card-container .left-card button {
-  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  background: navy;
   color: white;
   font-size: 18px;
   padding: 12px 24px;

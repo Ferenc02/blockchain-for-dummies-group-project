@@ -1,18 +1,13 @@
 .Contact-Us {
   /* Write in here */
   height: 100vh;
+  background-color: #001f3f;
 
-  .section-title {
-    height: 160px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    left: 120px;
-  }
 
   .card-container {
     display: flex;
     justify-content: space-around;
+    padding-top: 120px;
     .card {
       width: 493px;
       height: 615px;
@@ -33,7 +28,7 @@
 
       }
         button {
-          background: linear-gradient(90deg, #6a11cb, #2575fc);
+          background: navy;
           color: white;
           font-size: 18px;
           padding: 12px 24px;
