@@ -185,7 +185,10 @@ body {
 .Contact-Us {
   /* Write in here */
   height: 100vh;
-  background-image: url("./");
+  background-image: url("../images/contact-us-background.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   /* End */
 }
 .Contact-Us .card-container {
