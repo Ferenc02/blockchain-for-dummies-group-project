@@ -29,18 +29,19 @@
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        input {
-          margin-right: 40px;
-          margin-left: 40px;
-        }
-        textarea {
-          margin-right: 30px;
-          margin-left: 30px;
-        }
-        label {
-          text-align: center;
-        }
+        align-items: center;
+
       }
+        button {
+          background: linear-gradient(90deg, #6a11cb, #2575fc);
+          color: white;
+          font-size: 18px;
+          padding: 12px 24px;
+          border-radius: 30px;
+          cursor: pointer;
+          text-transform: uppercase;
+          width: 300px;
+        }
     }
     .right-card {
       display: flex;
