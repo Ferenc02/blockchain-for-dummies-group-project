@@ -199,12 +199,11 @@ body {
 .Contact-Us .card-container .card {
   width: 493px;
   height: 615px;
-  background-color: rgba(255, 255, 255, 0.6); /* White with 95% opacity, very slight transparency */
-  color: #333333; /* Dark gray text for good contrast */
-  border: 2px solid rgba(255, 255, 255, 0.5); /* Slightly transparent white border */
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 2px solid rgba(255, 255, 255, 0.5);
   padding: 20px;
-  border-radius: 10px; /* Rounded corners for a smooth look */
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 .Contact-Us .card-container .left-card h1 {
   height: 120px;
@@ -219,14 +218,22 @@ body {
   align-items: center;
 }
 .Contact-Us .card-container .left-card button {
-  background: navy;
-  color: white;
-  font-size: 18px;
-  padding: 12px 24px;
-  border-radius: 30px;
+  background-color: rgba(0, 180, 255, 0.2);
+  color: black;
+  border: 2px solid rgba(0, 200, 255, 0.5);
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-size: 1.2em;
+  text-align: center;
   cursor: pointer;
-  text-transform: uppercase;
-  width: 300px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(5, 255, 255, 0.8);
+  text-decoration: none;
+}
+.Contact-Us .card-container .left-card button:hover {
+  background-color: rgba(0, 255, 255, 0.4);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.7);
+  transform: scale(1.05);
 }
 .Contact-Us .card-container .right-card {
   display: flex;
