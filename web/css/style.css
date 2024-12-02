@@ -184,6 +184,7 @@ Header nav ul {
 Header nav ul li a {
   text-decoration: none;
   color: inherit;
+  font-weight: 300;
 }
 
 /* 
