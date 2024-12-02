@@ -306,8 +306,11 @@ header ul {
   /* End */
 }
 
+.Faq {
+  /* For Mobile viewving of Faq*/
+}
 .Faq .faq-container {
-  max-width: 2000px;
+  max-width: 3000px;
   margin: 0 auto;
   padding: 5rem;
 }
@@ -333,8 +336,10 @@ header ul {
   background: #eaeaea;
 }
 .Faq .faq-answer {
-  display: none;
-  padding: 1rem;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0;
+  transition: max-height 0.25s ease-in-out, padding 0.25s ease-in-out;
   background: #ffffff;
   border-top: 1px solid #ddd;
   font-size: 1rem;
@@ -343,10 +348,27 @@ header ul {
   transition: transform 0.3s ease;
 }
 .Faq .faq-item.active .faq-answer {
-  display: block;
+  max-height: 200px;
+  padding: 1rem;
 }
 .Faq .faq-item.active .arrow {
   transform: rotate(180deg);
+}
+@media (max-width: 600px) {
+  .Faq .faq-container {
+    padding: 1rem;
+  }
+  .Faq .faq-question {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+  .Faq .faq-answer {
+    font-size: 0.9rem;
+    padding: 0 0.8rem;
+  }
+  .Faq .faq-item {
+    margin-bottom: 0.8rem;
+  }
 }
 
 .Contact-Us {

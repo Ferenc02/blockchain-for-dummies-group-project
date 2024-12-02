@@ -1,6 +1,6 @@
 .Faq {
   .faq-container {
-    max-width: 2000px;
+    max-width: 3000px;
     margin: 0 auto;
     padding: 5rem;
   }
@@ -30,8 +30,10 @@
   }
   
   .faq-answer {
-    display: none;
-    padding: 1rem;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0; 
+    transition: max-height 0.25s ease-in-out, padding 0.25s ease-in-out; 
     background: #ffffff;
     border-top: 1px solid #ddd;
     font-size: 1rem;
@@ -42,10 +44,32 @@
   }
   
   .faq-item.active .faq-answer {
-    display: block;
+    max-height: 200px;
+    padding: 1rem; 
   }
   
   .faq-item.active .arrow {
     transform: rotate(180deg);
+  }
+
+/* For Mobile viewving of Faq*/
+  @media (max-width: 600px) {
+    .faq-container {
+      padding: 1rem; 
+    }
+
+    .faq-question {
+      font-size: 1rem; 
+      padding: 0.8rem; 
+    }
+
+    .faq-answer {
+      font-size: 0.9rem; 
+      padding: 0 0.8rem; 
+    }
+
+    .faq-item {
+      margin-bottom: 0.8rem; 
+    }
   }
 }
