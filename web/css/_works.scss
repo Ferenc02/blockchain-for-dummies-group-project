@@ -2,7 +2,7 @@
   position: relative;
   padding: clamp(1rem, 5vw, 3rem);
   background-color: #f9f9f9;
-  color: white; // Default text color for .How-it-works
+  color: black; // Default text color for .How-it-works
   font-family: 'Arial', sans-serif;
 
   // Background overlay
@@ -17,7 +17,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    opacity: 0.8; // Adjust transparency here
+    opacity: 0.1; // Adjust transparency here
     z-index: 1;
   }
 
@@ -32,8 +32,8 @@
     font-weight: bold;
     text-align: center;
     margin-bottom: clamp(1rem, 3vw, 2rem);
-    color: whitesmoke; // Explicit color for section title
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    // color: whitesmoke; // Explicit color for section title
+    text-shadow: 2px 2px 4px whitesmoke(0, 0, 0, 0.5);
   }
 
   .history {
@@ -43,12 +43,12 @@
     h3 {
       font-size: clamp(2rem, 4vw, 3rem);
       margin-bottom: clamp(0.5rem, 2vw, 1rem);
-      color: whitesmoke;
-      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+      // color: whitesmoke;
+      text-shadow: 1px 1px 3px whitesmoke(0, 0, 0, 0.4);
     }
 
     p {
-      background-color: rgba(4, 16, 44, 0.5); // Light background for contrast
+      // background-color: rgba(4, 16, 44, 0.5); // Light background for contrast
       padding: clamp(1rem, 2vw, 1.5rem);
       border: 1px solid rgba(0, 0, 0, 0.1);
       border-radius: 8px;
@@ -57,7 +57,8 @@
       line-height: 1.6;
       font-size: clamp(1rem, 2.5vw, 1.2rem);
       text-align: center;
-      color: whitesmoke; // Explicit color for paragraphs
+      text-shadow: 2px 2px 5px whitesmoke;
+      // color: whitesmoke; // Explicit color for paragraphs
     }
 
     .youtube {
@@ -81,12 +82,12 @@
         font-size: clamp(2rem, 4vw, 3rem);
         margin-bottom: clamp(0.5rem, 2vw, 1rem);
         text-align: center;
-        color: whitesmoke;
-        text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+        // color: whitesmoke;
+        text-shadow: 1px 1px 4px whitesmoke(0, 0, 0, 0.4);
       }
 
       p {
-        background-color: rgba(4, 16, 44, 0.5); // Light background for contrast
+        // background-color: rgba(4, 16, 44, 0.5); // Light background for contrast
         padding: clamp(1rem, 2vw, 1.5rem);
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 8px;
@@ -95,7 +96,7 @@
         line-height: 1.6;
         font-size: clamp(1rem, 2.5vw, 1.2rem);
         text-align: center;
-        color: whitesmoke; // Explicit color for paragraphs
+        color: black; // Explicit color for paragraphs
       }
 
       .container {
@@ -106,7 +107,7 @@
 
         .box {
           flex: 1 1 calc(33.33% - clamp(1rem, 3vw, 2rem));
-          background-color: transparent;
+          background-color: transparency(4, 16, 44, 0.5); // Light background for contrast
           padding: clamp(1rem, 3vw, 2rem);
           border-radius: 8px;
           box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
