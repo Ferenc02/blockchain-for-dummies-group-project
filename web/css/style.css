@@ -191,7 +191,7 @@ body {
 .Contact-Us .card-container {
   display: flex;
   justify-content: space-around;
-  padding-top: 120px;
+  padding-top: 160px;
 }
 .Contact-Us .card-container .card {
   width: 493px;
