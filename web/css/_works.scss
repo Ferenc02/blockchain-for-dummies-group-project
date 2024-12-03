@@ -1,5 +1,136 @@
 .How-it-works {
-  /* Write in here */
+  position: relative;
+  padding: clamp(1rem, 5vw, 3rem);
+  background-color: #f9f9f9;
+  color: black; // Default text color for the entire section
+  font-family: 'Arial', sans-serif;
 
-  /* End */
+  // Background overlay
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/background1.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.1; // Adjust transparency here
+    z-index: 1;
+  }
+
+  // Ensure content appears above the overlay
+  >* {
+    position: relative;
+    z-index: 2;
+  }
+
+  .section-title {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: clamp(1rem, 3vw, 2rem);
+    color: black; // Explicit color for section title
+    text-shadow: 1px 1px 3px rgba(128, 128, 128, 0.8); // Grey shadow
+  }
+
+  .history {
+    margin-bottom: clamp(2rem, 5vw, 3rem);
+    text-align: center;
+
+    h3 {
+      font-size: clamp(2rem, 4vw, 3rem);
+      margin-bottom: clamp(0.5rem, 2vw, 1rem);
+      color: black; // Explicit color for subtitles
+      text-shadow: 1px 1px 3px rgba(128, 128, 128, 0.8); // Grey shadow
+    }
+
+    p {
+      background-color: rgba(240, 240, 240, 0.8); // Light background for contrast
+      padding: clamp(1rem, 2vw, 1.5rem);
+      border: 1px solid rgba(200, 200, 200, 0.6);
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: clamp(1rem, 3vw, 1.5rem);
+      line-height: 1.6;
+      font-size: clamp(1rem, 2.5vw, 1.2rem);
+      text-align: center;
+      color: black; // Explicit color for paragraphs
+      text-shadow: 1px 1px 3px rgba(128, 128, 128, 0.8); // Grey shadow
+    }
+
+    .youtube {
+      margin: clamp(1rem, 4vw, 2rem) 0;
+      display: flex;
+      justify-content: center;
+
+      iframe {
+        border: 2px solid rgba(12, 7, 85, 0.9);
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        width: clamp(280px, 80vw, 560px);
+        height: clamp(158px, 45vw, 315px);
+      }
+    }
+
+    .tech {
+      margin-top: clamp(1rem, 3vw, 2rem);
+
+      h3 {
+        font-size: clamp(2rem, 4vw, 3rem);
+        margin-bottom: clamp(0.5rem, 2vw, 1rem);
+        text-align: center;
+        color: black; // Explicit color for subtitles
+        text-shadow: 1px 1px 3px rgba(128, 128, 128, 0.8); // Grey shadow
+      }
+
+      p {
+        background-color: rgba(240, 240, 240, 0.8); // Light background for contrast
+        padding: clamp(1rem, 2vw, 1.5rem);
+        border: 1px solid rgba(200, 200, 200, 0.6);
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: clamp(1rem, 3vw, 1.5rem);
+        line-height: 1.6;
+        font-size: clamp(1rem, 2.5vw, 1.2rem);
+        text-align: center;
+        color: black; // Explicit color for paragraphs
+        text-shadow: 1px 1px 3px rgba(128, 128, 128, 0.8); // Grey shadow
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); // Boxes adapt between 300px and full width
+        gap: clamp(1rem, 3vw, 2rem);
+        margin-top: clamp(1rem, 3vw, 2rem);
+        justify-content: center;
+        
+
+        .box {
+          background-color: rgba(240, 240, 240, 0.8); // Light background for contrast
+          padding: clamp(1rem, 3vw, 2rem);
+          border-radius: 8px;
+          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+          text-align: center;
+
+          h4 {
+            font-size: clamp(1.2rem, 2.5vw, 1.4rem);
+            font-weight: bold;
+            color: black;
+            text-shadow: 1px 1px 3px rgba(128, 128, 128, 0.8);
+          }
+
+          p {
+            font-size: clamp(0.9rem, 2.5vw, 1rem);
+            line-height: 1.6;
+            color: black;
+            text-shadow: 1px 1px 3px rgba(128, 128, 128, 0.8);
+          }
+        }
+      }
+
+    }
+  }
 }
