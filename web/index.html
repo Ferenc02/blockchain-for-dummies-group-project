@@ -19,6 +19,17 @@
     <script type="module" src="js/card_creator.js" defer></script>
   </head>
 
+  <header>
+    <nav role="navigation" aria-label="Main navigation">
+      <ul>
+        <li><a href="#how" aria-label="How Blockchain works">How it works</a></li>
+        <li><a href="#uses" aria-label="Blockchain use cases">Uses</a></li>
+        <li><a href="#faq" aria-label="blockchain faqs">FAQs</a></li>
+        <li><a href="#contact" aria-label="Learn more about blockchain">Learn more</a></li>
+        <li><a href="#contact" aria-label="Contact for learnin blockchain">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
   <body>
     <header>
       <nav>
@@ -95,12 +106,12 @@
       </section>
 
       <!--James section. -->
-      <section class="How-it-works" id="How-it-works">
+      <section id="how" class="How-it-works">
         <h1 class="section-title">How it works</h1>
         <div></div>
       </section>
       <!--Ferenc section. -->
-      <section class="Uses">
+      <section id="uses" class="Uses">
         <h1 class="section-title">Popular Uses:</h1>
         <div class="cards-container-parent">
           <button class="arrow_container scroll-left-popular scroll-left">
@@ -136,14 +147,116 @@
         </div>
       </section>
       <!--Topias section. -->
-      <section class="Faq">
+      <section id="faq" class="Faq">
         <h1 class="section-title">Frequently Asked Questions</h1>
-        <div></div>
+        <div class="faq-container">
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq1">
+              What is the difference between blockchain and cryptocurrency?
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-answer" id="faq1" role="region" aria-hidden="true">
+              Blockchain is the underlying technology that powers cryptocurrencies. Cryptocurrencies are digital currencies built on blockchain.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq2">
+              Can blockchain be hacked?
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-answer" id="faq2" role="region" aria-hidden="true">
+              While blockchain is highly secure due to its decentralized nature, vulnerabilities can occur at endpoints (e.g., wallets or exchanges).
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq3">
+              What is the difference between public and private blockchains?
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-answer" id="faq3" role="region" aria-hidden="true">
+              Public Blockchains: Open to anyone, fully decentralized, and secured by consensus mechanisms like proof-of-work or proof-of-stake (e.g., Bitcoin, Ethereum). Private Blockchains: Restricted to specific participants, often used within organizations, and typically more centralized.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq4">
+              What industries can benefit from blockchain technology?
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-answer" id="faq4" role="region" aria-hidden="true">
+              Blockchain technology can benefit various industries, including: Finance and banking, Supply chain and logistics, Healthcare, Real estate, Government, Entertainment.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq5">
+              What are the challenges or limitations of blockchain?
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-answer" id="faq5" role="region" aria-hidden="true">
+              Challenges include scalability issues, high energy consumption (for some consensus mechanisms), regulatory uncertainty, and the complexity of integrating blockchain into existing systems.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq6">
+              What is tokenization in blockchain?
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-answer" id="faq6" role="region" aria-hidden="true">
+              Tokenization is the process of representing real-world assets (e.g., real estate, stocks) as digital tokens on a blockchain. These tokens can be traded, transferred, or divided into smaller units.
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq7">
+              What is a blockchain wallet?
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-answer" id="faq7" role="region" aria-hidden="true">
+              A blockchain wallet is a digital tool that allows users to securely store, send, and receive cryptocurrencies or other digital assets. Wallets can be: Hot Wallets: Connected to the internet (example: Metamask/Coinbase). Cold Wallets: Offline storage solutions (e.g., hardware wallets).
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" aria-expanded="false" aria-controls="faq8">
+              What are Non-Fungible Tokens (NFTs)?
+              <span class="arrow">▼</span>
+            </button>
+            <div class="faq-answer" id="faq8" role="region" aria-hidden="true">
+              NFTs are unique digital assets representing ownership of a specific item, such as art, music, or virtual real estate, stored on a blockchain. Unlike cryptocurrencies, NFTs are not interchangeable.
+            </div>
+          </div>
+        </div>
       </section>
       <!--Arwin section. -->
       <section class="Contact-Us">
-        <h1 class="section-title">Contact Us</h1>
-        <div></div>
+        <div class="card-container">
+          <div class="card left-card" role="form">
+            <h1>Contact us!</h1>
+            <form action="">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required placeholder="Your Name">
+              <br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required placeholder="Your Email">
+              <br>
+              <label for="message">Message:</label>
+              <br>
+              <textarea id="message" name="message" required placeholder="Your Message"></textarea>
+              <br>
+              <button type="submit">Send Message</button>
+            </form>
+          </div>
+          <div class="card right-card">
+            <h1>Learn more!</h1>
+            <p>Down below are some links provided to learn more about Blockchain technology and Cryptocurrencies.</p>
+            <div class="links">
+              <ul>
+                <li><a href="https://www.investopedia.com/terms/b/blockchain.asp" target="_blank" aria-label="What is blockchain">What is blockchain?</a></li>
+                <li><a href="https://defillama.com/" target="_blank" aria-label="Blockahin statistics">Blockchain statistics</a></li>
+                <li><a href="https://bitcoin.org/bitcoin.pdf " target="_blank" aria-label="What is bitcoin">What is bitcoin?</a></li>
+                <li><a href="https://ethereum.org/se/" target="_blank" aria aria-label="What is ethereum">What is ethereum?</a></li>
+                <li><a href="https://www.coingecko.com/" target="_blank" aria-label="Cryptocurrencies">Cryptocurrencies</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
