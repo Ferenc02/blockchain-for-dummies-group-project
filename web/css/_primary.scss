@@ -10,3 +10,17 @@ body {
   font-weight: 400;
   font-style: normal;
 }
+
+/* All sections that are not the first section and not the footer section */
+section:not(:first-of-type):not(:is(footer section)) {
+  /* Your styles here */
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  /* Your styles here */
+  section:not(:first-of-type):not(:is(footer section)) {
+    /* Your styles here */
+    padding: 1rem;
+  }
+}

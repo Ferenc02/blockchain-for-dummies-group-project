@@ -16,6 +16,7 @@
     />
 
     <script src="js/script.js" defer></script>
+    <script type="module" src="js/card_creator.js" defer></script>
   </head>
 
   <header>
@@ -96,7 +97,7 @@
           <div class="arrow-down">
             <a href="#How-it-works">
               <img
-                src="./images/arrow_down.svg"
+                src="./images/icons/arrow_down.svg"
                 alt="Navigate to How it Works section"
               />
             </a>
@@ -111,8 +112,39 @@
       </section>
       <!--Ferenc section. -->
       <section id="uses" class="Uses">
-        <h1 class="section-title">Uses</h1>
-        <div></div>
+        <h1 class="section-title">Popular Uses:</h1>
+        <div class="cards-container-parent">
+          <button class="arrow_container scroll-left-popular scroll-left">
+            <img
+              src="images/icons/arrow_left.svg"
+              alt="left arrow navigation"
+            />
+          </button>
+          <div class="popular-uses-container cards-container"></div>
+          <button class="arrow_container scroll-right-popular scroll-right">
+            <img
+              src="images/icons/arrow_right.svg"
+              alt="right arrow navigation"
+            />
+          </button>
+        </div>
+        <h1 class="section-title">Innovative Uses:</h1>
+        <div class="cards-container-parent">
+          <button class="arrow_container scroll-left-innovative scroll-left">
+            <img
+              src="images/icons/arrow_left.svg"
+              alt="left arrow navigation"
+            />
+          </button>
+
+          <div class="innovative-uses-container cards-container"></div>
+          <button class="arrow_container scroll-right-innovative scroll-right">
+            <img
+              src="images/icons/arrow_right.svg"
+              alt="right arrow navigation"
+            />
+          </button>
+        </div>
       </section>
       <!--Topias section. -->
       <section id="faq" class="Faq">
