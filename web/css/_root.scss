@@ -3,8 +3,8 @@
 */
 
 :root {
-  --background-primary: #ffffff;
-  --text-primary: #141414;
+  --background-primary: rgb(255, 255, 255);
+  --text-primary: rgb(20, 20, 20);
 
   /* German Palette from flatui colors */
   --fusion-red: #fc5c65;
@@ -27,6 +27,17 @@
   --innuendo: #a5b1c2;
   --blue-grey: #778ca3;
   --blue-horizon: #4b6584;
+
+  /* New Palette which is more accessible and have good contrast ratio*/
+
+  --new-boyzone: #1f7ab2;
+  --new-algal-fuel: #17874b;
+  --new-fusion-red: #e4252f;
+  --new-nyc-taxi: #946d0a;
+  --new-gloomy-purple: #8d5bd2;
+  --new-blue-grey: #61778f;
+  --new-orange-hibiscus: #b65b07;
+  --new-maximum-blue-green: #1c8278;
 
   /*** Typography ***/
   --font-primary: "Inter", sans-serif;

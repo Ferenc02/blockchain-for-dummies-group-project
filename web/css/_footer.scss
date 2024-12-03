@@ -1,3 +1,79 @@
-/* 
-*Style used for the footer of the website 
-*/
+footer {
+    position: relative;
+    z-index: 10; // Footer should be above other content
+    padding: clamp(1rem, 3vw, 2rem);
+    background-color: #04102c; // Dark background for contrast
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+
+    nav {
+        display: flex;
+        justify-content: space-around; // Spread navigation links across the page
+        flex-wrap: wrap; // Allow wrapping for smaller screens
+        gap: clamp(0.5rem, 2vw, 1rem);
+        margin-bottom: clamp(1rem, 2vw, 1.5rem);
+
+        a {
+            font-size: clamp(1.5rem, 2vw, 1.9rem);
+            color: whitesmoke;
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: #66c1e4; // Highlight color on hover
+            }
+        }
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: clamp(0.5rem, 2vw, 1rem);
+        margin-bottom: clamp(1rem, 2vw, 1.5rem);
+
+        a {
+            font-size: clamp(0.9rem, 2vw, 1.2rem);
+            color: #fff;
+            text-decoration: none;
+            background-color: #66c1e4; // Button background
+            padding: clamp(0.5rem, 1vw, 0.75rem) clamp(1rem, 2vw, 1.5rem);
+            border-radius: 8px;
+            border: none;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+
+            &:hover {
+                background-color: #4a94b9; // Darker hover state
+                transform: translateY(-2px); // Subtle hover lift effect
+            }
+        }
+    }
+
+    .donation {
+        margin-bottom: clamp(1rem, 2vw, 1.5rem);
+
+        a {
+            display: inline-block;
+            font-size: clamp(0.9rem, 2vw, 1.2rem);
+            color: #fff;
+            text-decoration: none;
+            background-color: #66c1e4; // Highlight button background
+            padding: clamp(0.5rem, 1vw, 0.75rem) clamp(1rem, 2vw, 1.5rem);
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+
+            &:hover {
+                background-color: #4a94b9; // Darker hover state
+                transform: translateY(-2px); // Subtle hover lift effect
+            }
+        }
+    }
+
+    small {
+        display: block;
+        margin-top: clamp(1rem, 2vw, 1.5rem);
+        font-size: clamp(0.8rem, 2vw, 1rem);
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
