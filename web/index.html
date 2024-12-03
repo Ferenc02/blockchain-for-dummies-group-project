@@ -17,18 +17,30 @@
 
     <script src="js/script.js" defer></script>
   </head>
+
   <header>
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
       <ul>
-        <li><a href="">How it works</a></li>
-        <li><a href="">Uses</a></li>
-        <li><a href="">FAQs</a></li>
-        <li><a href="">Learn more</a></li>
-        <li><a href="">Contact us</a></li>
+        <li><a href="#how" aria-label="How Blockchain works">How it works</a></li>
+        <li><a href="#uses" aria-label="Blockchain use cases">Uses</a></li>
+        <li><a href="#faq" aria-label="blockchain faqs">FAQs</a></li>
+        <li><a href="#contact" aria-label="Learn more about blockchain">Learn more</a></li>
+        <li><a href="#contact" aria-label="Contact for learnin blockchain">Contact us</a></li>
       </ul>
     </nav>
   </header>
   <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="">How it works</a></li>
+          <li><a href="">Uses</a></li>
+          <li><a href="">FAQs</a></li>
+          <li><a href="">Learn more</a></li>
+          <li><a href="">Contact us</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
       <!---
       Each section should have a title and a div for the content.
@@ -38,26 +50,77 @@
       -->
 
       <!--Homepage-->
-      <section class="Home"></section>
+      <section class="Home">
+        <div class="hero">
+          <h1>Blockchain for dummies 101</h1>
+          <img src="./images/hero_image.png" alt="Blockchain" />
+        </div>
+
+        <div class="creators-parent">
+          <h2>Created By:</h2>
+
+          <div class="creators-profile-container">
+            <div class="creators-profile">
+              <img
+                src="./images/topias_profile.avif"
+                alt="Profile picture of Topias taking a selfie."
+                loading="lazy"
+              />
+              <p>Topias</p>
+            </div>
+            <div class="creators-profile">
+              <img
+                src="./images/arwin_profile.avif"
+                alt="Profile picture of Arwin sitting outside"
+                loading="lazy"
+              />
+              <p>Arwin</p>
+            </div>
+            <div class="creators-profile">
+              <img
+                src="./images/james_profile.avif"
+                alt="Profile picture of James smiling"
+                loading="lazy"
+              />
+              <p>James</p>
+            </div>
+            <div class="creators-profile">
+              <img
+                src="./images/ferenc_profile.avif"
+                alt="Profile picture of Ferenc smiling"
+                loading="lazy"
+              />
+              <p>Ferenc</p>
+            </div>
+          </div>
+          <div class="arrow-down">
+            <a href="#How-it-works">
+              <img
+                src="./images/arrow_down.svg"
+                alt="Navigate to How it Works section"
+              />
+            </a>
+          </div>
+        </div>
+      </section>
 
       <!--James section. -->
-      <section class="How-it-works">
+      <section id="how" class="How-it-works">
         <h1 class="section-title">How it works</h1>
         <div></div>
       </section>
       <!--Ferenc section. -->
-      <section class="Uses">
+      <section id="uses" class="Uses">
         <h1 class="section-title">Uses</h1>
         <div></div>
       </section>
       <!--Topias section. -->
-      <section class="Faq">
+      <section id="faq" class="Faq">
         <h1 class="section-title">Frequently Asked Questions</h1>
         <div></div>
       </section>
       <!--Arwin section. -->
       <section class="Contact-Us">
-        
         <div class="card-container">
           <div class="card left-card" role="form">
             <h1>Contact us!</h1>
@@ -91,53 +154,53 @@
         </div>
       </section>
     </main>
+
+    <!-- --------------------------footer---------------------------------------- -->
+
+    <footer>
+      <small>&copy; Krypto Broshan's Incorporated, 2024</small>
+
+      <section class="nav-foot">
+        <nav aria-label="Footer Navigation">
+          <a href="#" aria-label="Go to Home page">Home</a>
+          <a href="#" aria-label="Learn more About us">About</a>
+          <a href="#" aria-label="Contact us">Contact</a>
+        </nav>
+      </section>
+
+      <section class="social-links" aria-label="Social Media Links">
+        <a
+          href="https://facebook.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit our Facebook page"
+          >Facebook</a
+        >
+        <a
+          href="https://twitter.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit our Twitter page"
+          >Twitter</a
+        >
+        <a
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Visit our Instagram page"
+          >Instagram</a
+        >
+      </section>
+
+      <section class="donation" aria-label="Support our cause">
+        <a
+          href="https://crypto-wallet-integration-link.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Donate using cryptocurrency"
+          >Support our mission! Donate with Crypto</a
+        >
+      </section>
+    </footer>
   </body>
-
-  <!-- --------------------------footer---------------------------------------- -->
-
-  <footer>
-    <small>&copy; Krypto Broshan's Incorporated, 2024</small>
-
-    <section class="nav-foot">
-      <nav aria-label="Footer Navigation">
-        <a href="#" aria-label="Go to Home page">Home</a>
-        <a href="#" aria-label="Learn more About us">About</a>
-        <a href="#" aria-label="Contact us">Contact</a>
-      </nav>
-    </section>
-
-    <section class="social-links" aria-label="Social Media Links">
-      <a
-        href="https://facebook.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Visit our Facebook page"
-        >Facebook</a
-      >
-      <a
-        href="https://twitter.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Visit our Twitter page"
-        >Twitter</a
-      >
-      <a
-        href="https://instagram.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Visit our Instagram page"
-        >Instagram</a
-      >
-    </section>
-
-    <section class="donation" aria-label="Support our cause">
-      <a
-        href="https://crypto-wallet-integration-link.com"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Donate using cryptocurrency"
-        >Support our mission! Donate with Crypto</a
-      >
-    </section>
-  </footer>
 </html>
