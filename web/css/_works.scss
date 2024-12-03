@@ -1,31 +1,8 @@
 .How-it-works {
   position: relative;
   padding: clamp(1rem, 5vw, 3rem);
-  background-color: #f9f9f9;
   color: black; // Default text color for the entire section
   font-family: 'Arial', sans-serif;
-
-  // Background overlay
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/background1.webp');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    opacity: 0.1; // Adjust transparency here
-    z-index: 1;
-  }
-
-  // Ensure content appears above the overlay
-  >* {
-    position: relative;
-    z-index: 2;
-  }
 
   .section-title {
     font-size: clamp(1.8rem, 4vw, 2.5rem);
@@ -48,11 +25,8 @@
     }
 
     p {
-      background-color: rgba(240, 240, 240, 0.8); // Light background for contrast
       padding: clamp(1rem, 2vw, 1.5rem);
-      border: 1px solid rgba(200, 200, 200, 0.6);
       border-radius: 8px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       margin-bottom: clamp(1rem, 3vw, 1.5rem);
       line-height: 1.6;
       font-size: clamp(1rem, 2.5vw, 1.2rem);
@@ -87,11 +61,8 @@
       }
 
       p {
-        background-color: rgba(240, 240, 240, 0.8); // Light background for contrast
         padding: clamp(1rem, 2vw, 1.5rem);
-        border: 1px solid rgba(200, 200, 200, 0.6);
         border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         margin-bottom: clamp(1rem, 3vw, 1.5rem);
         line-height: 1.6;
         font-size: clamp(1rem, 2.5vw, 1.2rem);
@@ -106,13 +77,11 @@
         gap: clamp(1rem, 3vw, 2rem);
         margin-top: clamp(1rem, 3vw, 2rem);
         justify-content: center;
-        
 
         .box {
-          background-color: rgba(240, 240, 240, 0.8); // Light background for contrast
           padding: clamp(1rem, 3vw, 2rem);
           border-radius: 8px;
-          box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); // Subtle box shadow
           text-align: center;
 
           h4 {
@@ -130,7 +99,6 @@
           }
         }
       }
-
     }
   }
 }
