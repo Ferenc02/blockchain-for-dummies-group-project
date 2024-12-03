@@ -2,7 +2,7 @@
   position: relative;
   padding: clamp(1rem, 5vw, 3rem);
   color: black; // Default text color for the entire section
-  font-family: 'Arial', sans-serif;
+  font-family: "Arial", sans-serif;
 
   .section-title {
     font-size: clamp(1.8rem, 4vw, 2.5rem);
@@ -10,7 +10,6 @@
     text-align: center;
     margin-bottom: clamp(1rem, 3vw, 2rem);
     color: black; // Explicit color for section title
-    text-shadow: 1px 1px 3px rgba(128, 128, 128, 0.8); // Grey shadow
   }
 
   .history {
@@ -21,7 +20,6 @@
       font-size: clamp(2rem, 4vw, 3rem);
       margin-bottom: clamp(0.5rem, 2vw, 1rem);
       color: black; // Explicit color for subtitles
-      text-shadow: 1px 1px 3px rgba(128, 128, 128, 0.8); // Grey shadow
     }
 
     p {
@@ -32,7 +30,6 @@
       font-size: clamp(1rem, 2.5vw, 1.2rem);
       text-align: center;
       color: black; // Explicit color for paragraphs
-      text-shadow: 1px 1px 3px rgba(128, 128, 128, 0.8); // Grey shadow
     }
 
     .youtube {
@@ -57,7 +54,6 @@
         margin-bottom: clamp(0.5rem, 2vw, 1rem);
         text-align: center;
         color: black; // Explicit color for subtitles
-        text-shadow: 1px 1px 3px rgba(128, 128, 128, 0.8); // Grey shadow
       }
 
       p {
@@ -68,12 +64,14 @@
         font-size: clamp(1rem, 2.5vw, 1.2rem);
         text-align: center;
         color: black; // Explicit color for paragraphs
-        text-shadow: 1px 1px 3px rgba(128, 128, 128, 0.8); // Grey shadow
       }
 
       .container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); // Boxes adapt between 300px and full width
+        grid-template-columns: repeat(
+          auto-fit,
+          minmax(300px, 1fr)
+        ); // Boxes adapt between 300px and full width
         gap: clamp(1rem, 3vw, 2rem);
         margin-top: clamp(1rem, 3vw, 2rem);
         justify-content: center;
@@ -88,14 +86,12 @@
             font-size: clamp(1.2rem, 2.5vw, 1.4rem);
             font-weight: bold;
             color: black;
-            text-shadow: 1px 1px 3px rgba(128, 128, 128, 0.8);
           }
 
           p {
             font-size: clamp(0.9rem, 2.5vw, 1rem);
             line-height: 1.6;
             color: black;
-            text-shadow: 1px 1px 3px rgba(128, 128, 128, 0.8);
           }
         }
       }

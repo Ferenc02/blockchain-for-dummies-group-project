@@ -1,90 +1,152 @@
 .Contact-Us {
   /* Write in here */
-  height: 100vh;
-  background-image: url('../images/contact-us-background.webp');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
+  min-height: 100vh;
   .card-container {
     display: flex;
-    justify-content: space-around;
-    padding-top: 160px;
+
+    margin: auto;
+
+    margin-top: 2rem;
+    width: fit-content;
+    height: fit-content;
+
+    gap: 3rem;
+
+    flex-wrap: wrap;
+
+    height: fit-content;
+
     .card {
-      width: 493px;
-      height: 615px;
-        background-color: rgba(255, 255, 255, 0.6); 
-        border: 2px solid rgba(255, 255, 255, 0.5); 
-        padding: 20px;
-        border-radius: 10px; 
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);    
-    }
-    .left-card {
+      width: calc(50% - 3rem);
+      height: 38rem;
+
+      padding: 2.5rem 3rem;
+      border-radius: 1.25rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      color: #fefefe;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
       h1 {
-        height: 120px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
+        margin-bottom: 1rem;
       }
+    }
+
+    .left-card {
+      background-color: var(--new-boyzone);
       form {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: center;
 
+        width: 85%;
+        height: 100%;
+        label {
+          padding-bottom: 0.5rem;
+        }
+        input {
+          padding: 0.5rem 1rem;
+
+          border: none;
+          outline: none;
+          margin-bottom: 1rem;
+        }
+
+        div {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+
+        textarea {
+          padding: 0.5rem 1rem;
+          border: none;
+          outline: none;
+
+          height: 10rem;
+        }
       }
-        button {
-          background-color: rgba(0, 180, 255, 0.2); 
-          color: black; 
-          border: 2px solid rgba(0, 200, 255, 0.5); 
-          padding: 10px 20px; 
-          border-radius: 25px;
-          font-size: 1.2em; 
-          text-align: center; 
-          cursor: pointer; 
-          transition: all 0.3s ease; 
-          box-shadow: 0 0 15px rgba(5, 255, 255, 0.8); 
-          text-decoration: none;
-        }
-        button:hover {
-          background-color: rgba(0, 255, 255, 0.4); 
-          box-shadow: 0 0 25px rgba(0, 255, 255, 0.7); 
-          transform: scale(1.05); 
-        }
+
+      /*Makes button more modern*/
+      button {
+        background-color: #fefefe;
+        outline: none;
+        color: var(--text-primary);
+        text-decoration: none;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        min-width: 10ch;
+        padding: 0.25em 0.75em;
+        min-height: 44px;
+        text-align: center;
+        line-height: 1.1;
+        transition: 250ms transform ease-in-out;
+      }
+      button.block {
+        width: 100%;
+      }
+      button:hover {
+        transform: scale(1.025);
+      }
     }
     .right-card {
+      background-color: var(--new-fusion-red);
       display: flex;
       flex-direction: column;
-      h1 {
-        height: 120px;
+      justify-content: space-between;
+
+      .text-container {
         display: flex;
-        justify-content: center;
-        align-items: center;
+        flex-direction: column;
       }
+
       p {
         text-align: center;
       }
-      div {
+      div:not(.text-container) {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 447px;
+
+        width: 100%;
+        height: 100%;
+
         ul {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          gap: 40px;
+          gap: 2rem;
+
           li {
             a {
               text-decoration: none;
-              color: blue;
+              color: #fefefe;
+              text-decoration: underline;
+              font-weight: bold;
             }
           }
         }
       }
     }
   }
-  
 
+  @media (max-width: 768px) {
+    .card-container {
+      gap: 0.5rem;
+
+      .card {
+        width: 100%;
+      }
+    }
+  }
   /* End */
 }
