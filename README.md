@@ -2,6 +2,10 @@
 <p>Natural language inspired website description explaining blockchain technology to someone who either has little or no knowledge of BC technology. The website must be responsive for mobile/tablet and desktop.</p>
 <p>Finished website is going to be used as a learning tool about blockchain technology. </p>
 
+![blockchain](https://github.com/user-attachments/assets/5d70dccf-3287-4625-96b0-1291fc2d94d8)
+
+
+
 <h2>
 Themes (What will it have)?: 
 </h2>
